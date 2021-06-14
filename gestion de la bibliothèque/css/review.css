@@ -1,0 +1,54 @@
+.bn-alp {
+	height: 288px;
+}
+
+.bn-alp ul li {
+	position: absolute;
+	display: none;
+}
+
+.bn-alp img {
+	/*width: 1226px;
+	height: 418px;*/
+
+	margin-left: 225px;
+    margin-right: 225px;
+    width: 1350px;
+    height: 280px;
+    overflow: hidden;
+}
+
+#wrapper {
+	border-top: 3px solid #3b3333;
+	width: 1450px;
+	margin: 0 auto;
+	margin-left: 200px;
+	margin-top: 5px;
+	margin-bottom: 15px;
+	position: relative;
+}
+
+	#wrapper .over {
+		width: 1650px;
+		height: 30px;
+		overflow: hidden;
+		position: relative;
+	}
+
+.hmBom_nm {
+	color: #FFF;
+	background: #424242;
+	position: absolute;
+	left: 0px;
+	top: -15px;
+	line-height: 27px;
+	height: 27px;
+	width: 160px;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+	display: inline-block;
+	padding: 0px 18px;
+	border-radius: 1.6em;
+	text-transform: uppercase;
+}

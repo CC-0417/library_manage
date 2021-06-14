@@ -1,0 +1,299 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>登录页面</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+         html {
+            height: 100%;
+        }
+
+        body {
+            height: 100%;
+            /* background-color: aquamarine; */
+            background: #fff url(img/fengmian.jpg) 50% 50% no-repeat;
+            background-size: cover;
+        }
+    
+         .dowebok {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 430px;
+            height: 550px;
+            margin: -300px 0 0 -215px;
+            border: 1px solid #fff;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+        .logo {
+            width: 104px;
+            height: 104px;
+            margin: 50px auto 80px;
+            /* background-color:antiquewhite; */
+            background: url(img/7777.png) 0 0 no-repeat;
+        }
+        
+         .form-item {
+            position: relative;
+            width: 360px;
+            margin: 0 auto;
+            padding-bottom: 30px;
+        }
+
+            .form-item #password,#username {
+                width: 288px;
+                height: 48px;
+                padding-left: 70px;
+                border: 1px solid #fff;
+                border-radius: 25px;
+                font-size: 18px;
+                color: #fff;
+                background-color: transparent;
+                outline: none;
+            }
+
+            .form-item #submit {
+                width: 360px;
+                height: 50px;
+                border: 0;
+                border-radius: 25px;
+                font-size: 18px;
+                color: #1f6f4a;
+                outline: none;
+                cursor: pointer;
+                background-color: #fff;
+                /*text-align: right;*/
+            }
+
+            .form-item #qch, #qch1 {
+                font-size: 18px;
+                color: red;
+            }
+
+         #username {
+            background: url(img/emil.png) 20px 14px no-repeat;
+        }
+       
+         #password {
+            background: url(img/password.png) 23px 11px no-repeat;
+        }
+       
+         .tip {
+            display: none;
+            position: absolute;
+            left: 20px;
+            top: 52px;
+            font-size: 14px;
+            color: #f50;
+        }
+       
+         .reg-bar {
+            width: 360px;
+            margin: 20px auto 0;
+            font-size: 14px;
+            overflow: hidden;
+        }
+           
+             .reg-bar a {
+                color: #fff;
+                text-decoration: none;
+            }
+               
+                 .reg-bar a:hover {
+                    text-decoration: underline;
+                }
+          
+            .reg-bar .reg {
+                float: left;
+            }
+            
+             .reg-bar .forget {
+                float: right;
+            }
+        
+         .dowebok ::-webkit-input-placeholder {
+            font-size: 18px;
+            line-height: 1.4;
+            color: #fff;
+        }
+        
+         .dowebok :-moz-placeholder {
+            font-size: 18px;
+            line-height: 1.4;
+            color: #fff;
+        }
+        
+         .dowebok ::-moz-placeholder {
+            font-size: 18px;
+            line-height: 1.4;
+            color: #fff;
+        }
+        
+         .dowebok :-ms-input-placeholder {
+            font-size: 18px;
+            line-height: 1.4;
+            color: #fff;
+        }
+        
+         @media screen and (max-width: 500px) {
+              *
+        {
+            box-sizing: border-box;
+        }
+      
+         .dowebok {
+            position: static;
+            width: auto;
+            height: auto;
+            margin: 0 30px;
+            border: 0;
+            border-radius: 0;
+        }
+      
+         .logo {
+            margin: 50px auto;
+        }
+        
+         .form-item {
+            width: auto;
+        }
+            
+             .form-item input, .form-item button, .reg-bar {
+                width: 100%;
+            }
+
+        }
+        
+        </style>
+        <script type="text/javascript">
+
+        </script>
+</head>
+<body>
+    <div class="dowebok">
+        <div class="logo"></div>
+        <!--<div class="form-item">
+        <form name="form">
+            <input id="username" type="text" autocomplete="off" placeholder="请输入账号">
+            <input id="password" type="password" autocomplete="off" placeholder="请输入密码">
+
+            <span style="color:white">身份：</span>
+            <select name="m" style="border-radius:13px">
+                <option value="1">  用户</option>
+                <option value="2">管理员</option>
+            </select>
+
+            <div class="form-item"><input id="submit" type="button" value="登录" onclick="a();" /></div>
+        </form>
+        <div id="qch"></div>
+        <div id="qch1"></div>
+    </div>-->
+
+        <div class="form-item">
+            <input id="username" type="text" autocomplete="off" placeholder="请输入编号">
+        </div>
+        <div class="form-item">
+            <input id="password" type="password" autocomplete="off" placeholder="请输入密码">
+        </div>
+        <div class="form-item">
+
+            <form name="form" >
+                <span style="color:white">身份：</span>
+                <select name="m" style="border-radius: 13px;font-size: 18px;margin-bottom:8px">
+                    <option value="1">  用户</option>
+                    <option value="2">管理员</option>
+                </select>
+
+            <input id="submit" type="button" value="登录" onclick="a()" >
+        
+            </form>
+
+            <div id="qch"></div>
+          
+        </div>
+
+        <script type="text/javascript">
+
+            function a() {
+
+             
+
+                var num = document.form.m.value;
+
+                if (num == 1) {
+                    var iid = document.getElementById("username").value;
+                    var ipwd = document.getElementById("password").value;
+                    var data = "iid=" + iid + "&ipwd=" + ipwd;
+                    //alert(data);
+
+                    var xmlhttp = (window.XMLHttpRequest) ? new XMLHttpRequest() : new ActiveXObject("Microsoft.XMLHTTP");
+                    xmlhttp.open("post", "loginU.aspx", true);
+                    //如果使用POST提交 不设置这条语句,url页面 Request.Form["key"] 是取不到值的！
+                    xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+                    xmlhttp.onreadystatechange = function () {
+
+                        if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                            if (!xmlhttp.responseText) {
+                                window.open('用户页面.html');
+                            } else {
+                                document.getElementById("qch").innerHTML = xmlhttp.responseText;
+                            }
+
+                        }
+                    }
+                    xmlhttp.send(data);
+
+                }
+                else if (num == 2) {
+                    var iid = document.getElementById("username").value;
+                    var ipwd = document.getElementById("password").value;
+                    var data = "iid=" + iid + "&ipwd=" + ipwd;
+                    //alert(data);
+
+                    var xmlhttp = (window.XMLHttpRequest) ? new XMLHttpRequest() : new ActiveXObject("Microsoft.XMLHTTP");
+                    xmlhttp.open("post", "loginA.aspx", true);
+                    //如果使用POST提交 不设置这条语句,url页面 Request.Form["key"] 是取不到值的！
+                    xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+                    xmlhttp.onreadystatechange = function () {
+
+                        if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                            if (!xmlhttp.responseText) {
+                             
+                                window.open('管理员页面.html');
+                            } else {
+                                document.getElementById("qch").innerHTML = xmlhttp.responseText;
+                            }
+
+                        }
+                    }
+                    xmlhttp.send(data);
+
+                }
+
+
+
+            }
+        </script>
+
+
+        <!--<div class="reg-bar">
+
+         <a class="reg" href="javascript:">立即注册</a>
+
+         <a class="forget" href="javascript:">忘记密码</a>
+
+
+    </div>-->
+
+
+    </div>
+ 
+</body>
+</html>

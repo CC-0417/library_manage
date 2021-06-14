@@ -1,0 +1,168 @@
+<html>
+<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>图书管理系统</title>
+		<link rel="shortcut icon" href="favicon1.ico" type="image/x-icon">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/iconfont.css">
+		<link rel="stylesheet" href="css/review.css">
+		<script src="js/jquery-1.12.4.js"></script>
+		<script src="js/review.js"></script>
+
+</head>
+<body>
+	<div class="topbar">
+		<div class="container">
+			<div class="topbar-nav">
+				<!-- <a href="">LibrarySystem </a> -->
+				<a href=""><i class="iconfont">&#xe619;</i> 欢迎使用图书管理系统!</a><span>丨</span>
+				<a href="">首页</a><span>丨</span>
+				<a href="">图书资源</a><span>丨</span>
+				<a href="">我要借阅</a><span>丨</span>
+				<a href="">我要还书</a><span>丨</span>
+				<a href="">借阅记录</a>
+			</div>
+			<div class="topbar-return">
+				<a href=""><i class="iconfont">&#xe637;</i>待还书目<span>（0）</span></a>
+			</div>
+			<div class="topbar-info">
+				<a href="登录页面.html">登录</a><span>丨</span>
+				<a href="registerU.aspx">用户注册</a><span>丨</span>
+				<a href="" class="sep">消息通知</a>
+			</div>
+			
+		</div>
+	</div>
+
+	<div class="header">
+		<div class="container">
+			<div class="header-logo">
+				<a href="#" class="lr">图书资源</a>
+			</div>
+			<div class="header-title">
+			</div>
+			<div class="header-search">
+				<form action="" class="search-form">
+
+					<input type="search" name="keyword" autocomplete="off" placeholder="请输入您要查找的图书名称或作者" class="search-text">
+                    <input type="submit" value="&#xe616;" class="search-btn iconfont">
+
+				</form>
+			</div>
+		</div>
+
+	</div>
+
+	<div id="wrapper">
+		<div class="hmBom_nm">图书馆风采Sceneries</div>
+	</div>
+
+<!-- 轮播图 -->
+    <div class="bn-alp">
+        <ul>
+            <li style="display:block;">
+                <a href=""><img src="img/picinturn2.png" alt=""></a>
+            </li>
+            <li>
+                <a href=""><img src="img/picinturn1.png" alt=""></a>
+            </li>
+            <li>
+                <a href=""><img src="img/picinturn3.png" alt=""></a>
+            </li>
+        </ul>
+
+    </div>
+
+
+
+	
+	<div class="center">
+
+		<!-- 导航栏 -->
+		<div class="sidebar">
+			<div class="tab" id="cate0"><i class="reorder"></i><i class="iconfont">&#xe614;</i>  读者导航栏</div>
+			<div class="design" id="cate1">
+				<div class="navto-nav"><i class="imooc-icon"></i><i class="iconfont">&#xe637;</i> <a href=""> 图书资源</a></div>
+			</div>
+			<div class="design" id="cate2">
+				<div class="navto-nav"><i class="imooc-icon"></i><i class="iconfont">&#xe623;</i> <a href=""> 借阅历史</a></div>
+			</div>
+			<div class="design" id="cate3">
+				<div class="navto-nav"><i class="imooc-icon"></i><i class="iconfont">&#xe639;</i> <a href=""> 待还书目</a></div>
+			</div>
+			<div class="design" id="cate4">
+				<div class="navto-nav"><i class="imooc-icon"></i><i class="iconfont">&#xe632;</i> <a href=""> 个人中心</a></div>
+			</div>
+			<div class="design" id="cate5">
+				<div class="navto-nav"><i class="imooc-icon"></i><i class="iconfont">&#xe618;</i> <a href=""> 借阅指南</a></div>
+			</div>
+			<div class="design" id="cate5">
+				<div class="navto-nav"><i class="imooc-icon"></i><i class="iconfont">&#xe617;</i> <a href=""> 问题反馈</a></div>
+			</div>
+		</div>
+
+		<!-- 布告栏 -->
+		<div class="textDiv">
+			<div class="biaoti">
+				<b> 新闻公告</b>
+			</div>
+			<ul type="">
+				<li><a href="">【新闻】武汉大学图书馆来馆调研交流</a></li>
+				<li><a href="">【通知】图书馆馆际互借与文献传递优惠活动通知</a></li>
+				<li><a href="">【新闻】图书馆组织职工春游</a></li>
+				<li><a href="">【通知】图书馆馆际互借与文献传递优惠活动通知</a></li>
+				<li><a href="">【新闻】图书馆开展一系列工会小组特色活动</a></li>
+				<li><a href="">【新闻】主馆东区分馆退休党支部完成换届选举</a></li>
+			</ul>
+			<div class="stat blue">
+				news
+			</div>
+		</div>
+
+
+
+		<div class="textDiv">
+			<div class="biaoti">
+				<b> 本月热门书籍</b>
+			</div>
+			<ol type="1">
+				<li><a href="">马克思主义基本原理概论</a></li>
+				<li><a href="">毛泽东思想和中国特色社会主义理论体系概论</a></li>
+				<li><a href="">思想道德修养与法律基础</a></li>
+				<li><a href="">霍乱时期的爱情</a></li>
+				<li><a href="">微观经济学</a></li>
+				<li><a href="">web开发技术与应用</a></li>
+			</ol>
+			<div class="stat green">
+				hot
+			</div>
+		</div>
+
+		<div class="textDiv">
+			<div class="biaoti">
+				<b> 学术资讯</b>
+			</div>
+			<ul type="">
+				<li><a href="">【通知】图书馆馆际互借与文献传递优惠活动通知</a></li>
+				<li><a href="">【新闻】图书馆开展一系列工会小组特色活动</a></li>
+				<li><a href="">【新闻】主馆东区分馆退休党支部完成换届选举</a></li>
+				<li><a href="">【新闻】武汉大学图书馆来馆调研交流</a></li>
+				<li><a href="">【通知】图书馆馆际互借与文献传递优惠活动通知</a></li>
+				<li><a href="">【新闻】图书馆组织职工春游</a></li>
+			</ul>
+
+			<div class="stat red">
+				science
+			</div>
+		</div>
+	</div>
+
+
+</body>
+
+	
+
+
+</html>
